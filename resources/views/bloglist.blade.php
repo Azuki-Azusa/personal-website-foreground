@@ -33,6 +33,7 @@
 						<div><el-link :underline="false" type="danger" target="_blank" href="https://weibo.com/cj980129">Weibo</el-link></div>
 					</el-col>
 				</el-row>
+				<el-divider></el-divider>
 			</el-header>
 			<el-main>
 				<el-row>

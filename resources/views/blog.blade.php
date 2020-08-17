@@ -40,9 +40,14 @@
 		<el-container>
 			<el-header style="margin:0px 0px 50px">
 				<el-row>
-					<el-col :span="4">
+					<el-col :span="2">
 						<div class="grid-content bg-purple">
-							<h2><el-link :underline="false" type="success" href="../">HomePage</el-link></h2>
+							<h2><el-link :underline="false" type="success" href="/">HomePage</el-link></h2>
+						</div>
+					</el-col>
+					<el-col :span="2">
+						<div class="grid-content bg-purple">
+							<h2><el-link :underline="false" type="success" href="/bloglist">BlogList</el-link></h2>
 						</div>
 					</el-col>
 					<el-col :span="16">
@@ -62,6 +67,7 @@
 						
 					</el-col>
 				</el-row>
+				<el-divider></el-divider>
 			</el-header>
 			<el-main>
 				<el-row>
