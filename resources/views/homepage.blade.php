@@ -26,6 +26,7 @@
                         <a class="thin" href="#">Lyric</a>
                         <a class="thin" href="#">Toolkit</a>
                         <a class="thin" href="#">Image</a>
+                        <a class="thin" href="#">MessageBoard</a>
                     </div>
                 </h1>
             </div>

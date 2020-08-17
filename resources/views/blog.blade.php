@@ -75,6 +75,7 @@
 						<el-container direction="vertical">
 							<el-main class="blogContent">{!! $blog->html !!}</el-main>
 							<el-main style="margin:50px">
+								<el-divider></el-divider>
 								<el-container>
 									<el-header><h3>Comments:</h3></el-header>
 									<el-main>
