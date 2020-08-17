@@ -13,7 +13,7 @@ class BlogComment extends Model
         return BlogComment::where('blog_id', $blog_id)->get()->all();
     }
 
-    static public function createComment($blog_id, $name, $content)
+    static public function createComment($blog_id, $name, $content, $ip)
     {
         if (!$blog_id || !$name || !$content)
         {
@@ -26,6 +26,7 @@ class BlogComment extends Model
         $comment->author_name = $name;
         date_default_timezone_set('Asia/Shanghai');
         $comment->datetime = date("Y-m-d H:i:s");
+        $comment->ip = $ip;
 
         $comment->save();
 

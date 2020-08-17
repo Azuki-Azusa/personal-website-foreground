@@ -26,6 +26,7 @@ class BlogController extends Controller
         $name = $request->input('name');
         $comment = $request->input('comment');
         $blog_id = $request->input('blog_id');
-        return BlogComment::createComment($blog_id, $name, $comment);
+        $ip = $request->ip();
+        return BlogComment::createComment($blog_id, $name, $comment, $ip);
     }
 }
