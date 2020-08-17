@@ -85,7 +85,7 @@
 												<el-timeline-item timestamp="{{ $comments[$i]->datetime }}" placement="top">
 												<el-card>
 													<p>{{$i+1}}:</p>
-													<p>{{ $comments[$i]->content }}</p>
+													<pre>{{ $comments[$i]->content }}</pre>
 													<p>By {{ $comments[$i]->author_name }}</p>
 													<el-button type="primary" icon="el-icon-edit" size="mini" @click="clickReply({{$i+1}})">Reply</el-button>
 												</el-card>
