@@ -99,11 +99,12 @@
 											type="textarea"
 											:rows="4"
 											placeholder="请输入内容"
-											v-model="textarea">
+											v-model="textarea"
+											maxlength="120">
 										</el-input>
 									</el-main>
 									<el-footer>
-										<el-input style="width: 60%" placeholder="请输入内容" v-model="name">
+										<el-input style="width: 60%" placeholder="请输入内容" v-model="name" maxlength="12">
 											<template slot="prepend">Name</template>
 										</el-input>
 										<el-button style="float:right; width: 20%" type="primary" @click="clickSubmit">Submit</el-button>

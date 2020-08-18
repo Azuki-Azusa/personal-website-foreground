@@ -19,12 +19,12 @@
             <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
                 <h1 class="main-title">
-                    <div>Azu機</div>
+                    <div>Azuki</div>
                     <div><span class="thin">Personal Website</span></div>
                     <div>
                         <a class="thin" href="bloglist">Blog</a>
                         <a class="thin" href="#">Lyric</a>
-                        <a class="thin" href="#">Toolkit</a>
+                        <a class="thin" href="toolkit">Toolkit</a>
                         <a class="thin" href="#">Image</a>
                         <a class="thin" href="#">MessageBoard</a>
                     </div>

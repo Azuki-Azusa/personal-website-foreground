@@ -22,7 +22,7 @@
 				<el-row>
 					<el-col :span="4">
 						<div class="grid-content bg-purple">
-							<h2><el-link :underline="false" type="success" href="../">HomePage</el-link></h2>
+							<h2><el-link :underline="false" type="success" href="/">HomePage</el-link></h2>
 						</div>
 					</el-col>
 					<el-col :span="16">

@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/bloglist', 'BlogController@blogList');
 Route::get('/blog/{blog_id}', 'BlogController@blog');
 Route::post('/blog/comment', 'BlogController@submitComment');
+
+Route::get('/toolkit', function(){
+    return view('toolkit');
+});
