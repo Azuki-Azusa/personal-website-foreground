@@ -11,6 +11,7 @@
     <!-- import CSS -->
     <link rel="stylesheet" href="{{URL::asset('assets/css/normalize.min.css')}}">
     <link rel="stylesheet" href="{{URL::asset('assets/css/index.css')}}">
+    <link rel="icon" href="{{URL::asset('favicon.ico')}}" type="image/x-icon" />
 </head>
 
 <body>
