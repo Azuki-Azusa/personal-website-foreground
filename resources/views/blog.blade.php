@@ -8,6 +8,7 @@
 	<title>{{ $blog->title }}</title>
 	<!-- import CSS -->
 	<link rel="stylesheet" href="{{URL::asset('assets/element-ui/lib/theme-chalk/index.css')}}">
+	<link rel="stylesheet" href="{{URL::asset('assets/highlight/styles/default.css')}}">
 	<style>
 		code {
             color: #f66;
@@ -84,7 +85,7 @@
 												@for ($i = 0; $i < count($comments); $i ++)
 												<el-timeline-item timestamp="{{ $comments[$i]->datetime }}" placement="top">
 												<el-card>
-													<p>{{$i+1}}:</p>
+													<p>Comment {{$i+1}}:</p>
 													<pre>{{ $comments[$i]->content }}</pre>
 													<p>By {{ $comments[$i]->author_name }}</p>
 													<el-button type="primary" icon="el-icon-edit" size="mini" @click="clickReply({{$i+1}})">Reply</el-button>
@@ -122,6 +123,8 @@
 	<!-- import JavaScript -->
 	<script src="{{URL::asset('assets/element-ui/lib/index.js')}}"></script>
 	<script src="{{URL::asset('assets/axios/dist/axios.min.js')}}"></script>
+	<script src="{{URL::asset('assets/highlight/highlight.pack.js')}}"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<script>
 		new Vue({
 			el: '#app',
