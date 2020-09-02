@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="BLOG, 博客, IT, 计算机, 编程">
-	<meta name="Description" Content="Azu機个人博客">
-	<title>{{ $lyric->title }}</title>
+	<meta name="keywords" content="日语, 日文, 歌词, 假名, 标注, 动画, anisong, 日文歌">
+	<meta name="Description" Content="Azu機个人网站 假名标注计划">
+	<title>{{ $lyric->title }} 假名标注</title>
 	<!-- import CSS -->
 	<link rel="stylesheet" href="{{URL::asset('assets/element-ui/lib/theme-chalk/index.css')}}">
 	<link rel="stylesheet" href="{{URL::asset('assets/highlight/styles/default.css')}}">
