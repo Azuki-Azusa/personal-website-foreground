@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="keywords" content="日语, 日文, 歌词, 假名, 标注, 动画, anisong, 日文歌">
-	<meta name="Description" Content="Azu機个人网站 假名标注计划">
+	<meta name="Description" Content="Azu機个人网站 假名标注">
 	<title>{{ $lyric->title }} 歌词假名标注</title>
 	<!-- import CSS -->
 	<link rel="stylesheet" href="{{URL::asset('assets/element-ui/lib/theme-chalk/index.css')}}">
