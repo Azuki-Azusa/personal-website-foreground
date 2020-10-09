@@ -26,3 +26,6 @@ Route::get('/lyric/{lyric_id}', 'LyricController@lyric');
 Route::get('/toolkit', function(){
     return view('toolkit');
 });
+
+Route::get('/messageboard', 'MessageController@messageboard');
+Route::post('/message', 'MessageController@submitMessage');

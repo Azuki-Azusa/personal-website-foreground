@@ -10,7 +10,7 @@ class BlogComment extends Model
 
     static public function getCommentsByBlogID($blog_id)
     {
-        return BlogComment::where('blog_id', $blog_id)->get()->all();
+        return BlogComment::where('blog_id', $blog_id)->select('id', 'content', 'datetime', 'author_name')->get()->all();
     }
 
     static public function createComment($blog_id, $name, $content, $ip)
