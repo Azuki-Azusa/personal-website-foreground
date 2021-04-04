@@ -24,9 +24,8 @@
                     <div><span class="thin">Personal Website</span></div>
                     <div>
                         <a class="thin" href="bloglist">Blog</a>
-                        <a class="thin" href="lyric/1">Lyric</a>
+                        <a class="thin" href="http://3.142.130.245/">Lyric</a>
                         <a class="thin" href="toolkit">Toolkit</a>
-                        <a class="thin" href="#">Image</a>
                         <a class="thin" href="messageboard">MessageBoard</a>
                     </div>
                 </h1>
