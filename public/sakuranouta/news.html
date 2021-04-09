@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html style="margin: 0;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>サクラノ詩</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="app">
+        <header id="header">
+            <div>
+                <nav>
+                    <ul class="header-ul">
+                        <li id="logo-ul"><a><img onclick="window.open('index.html?para=app')" class="logo-img" src="resource/topimg/title.png"></a></li>
+                        <li><a><img onclick="window.open('index.html?para=infomation')" class="nav-img" src="resource/topimg/bt01.png"></a></li>
+                        <li><a><img onclick="window.open('index.html?para=world')" class="nav-img" src="resource/topimg/bt02.png"></a></li>
+                        <li><a><img onclick="window.open('index.html?para=story')" class="nav-img" src="resource/topimg/bt03.png"></a></li>
+                        <li><a><img onclick="window.open('index.html?para=character')" class="nav-img" src="resource/topimg/bt04.png"></a></li>
+                        <li><a><img onclick="window.open('index.html?para=gallery')" class="nav-img" src="resource/topimg/bt05.png"></a></li>
+                        <li><a><img onclick="window.open('index.html?para=news')" class="nav-img" src="resource/topimg/bt07.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <div align="center" class="main" v-bind:style="{'padding-top': topHeight}">
+            <div class="news-header subheader">
+                <img src="resource/title/tit_whatsnew.png">
+            </div>
+            <div>
+                <ul class="news-ul">
+                    <li>
+                        <div @click="clickNews($event)" id="5" class="news-banner">
+                            <p class="date">2017／4／19</p>
+                            <p class="news-title">サクラノ詩が『萌えゲーアワード2015』にて"大賞"を頂きました！</p>
+                        </div>
+                        <transition name="news">
+                            <div class="news-text" v-if="show_news[5]">
+                                <div>
+                                    <a href="http://www.futabasha.co.jp/booksdb/book/bookview/978-4-575-31251-5.html">
+                                        <img src="https://www.makura-soft.com/sakuranouta/whatsnew/img/top_archive.png">
+                                    </a>
+                                </div>
+                                サクラノ詩を彩った各種イラストの他、すかぢ・浅生詠氏による作品解説と
+                                <br>
+                                シナリオ対談、BGM・OP/EDを担当したピクセルビー・松本文紀氏・はな氏と
+                                <br>
+                                すかぢの音楽座談会、主題歌の楽譜などを収録。
+                            </div>
+                        </transition>
+                    </li>
+                    <li>
+                        <div @click="clickNews($event)" id="4" class="news-banner">
+                            <p class="date">2016／5／23</p>
+                            <p class="news-title">『サクラノ詩 -櫻の森の上を舞う- 公式ビジュアルアーカイヴ』発売決定！！</p>
+                        </div>
+                        <transition name="news">
+                            <div class="news-text" v-if="show_news[4]">
+                                <div>
+                                    <a href="http://moe-gameaward.com/prize/2015/gp.html#p01">
+                                        <img src="https://www.makura-soft.com/sakuranouta/whatsnew/img/topimg_moegeaword_2015.png">
+                                    </a>
+                                </div>
+                                弊社作品、『サクラノ詩-櫻の森の上を舞う-』が萌えゲーアワード2015にて
+                                <br>
+                                "大賞"を頂きました！！
+                            </div>
+                        </transition>
+                    </li>
+                    <li>
+                        <div @click="clickNews($event)" id="3" class="news-banner">
+                            <p class="date">2016／5／19</p>
+                            <p class="news-title">『サクラノ詩』DMM.com様にてダウンロード販売を開始！！</p>
+                        </div>
+                        <transition name="news">
+                            <div class="news-text" v-if="show_news[3]">
+                                <div>
+                                    <a href="http://dlsoft.dmm.co.jp/detail/mnphs_0002/">
+                                        <img src="https://www.makura-soft.com/sakuranouta/whatsnew/img/sakura_dmm_dl.jpg">
+                                    </a>
+                                </div>
+                                DMM.com様にて『サクラノ詩-櫻の森の上を舞う-』のダウンロード販売を
+                                <br>
+                                開始しました！
+                            </div>
+                        </transition>
+                    </li>
+                    <li>
+                        <div @click="clickNews($event)" id="2" class="news-banner">
+                            <p class="date">2016／1／11</p>
+                            <p class="news-title">『サクラノ詩』「第一回サクラノ詩人気投票」が無事終了しました！</p>
+                        </div>
+                        <transition name="news">
+                            <div class="news-text" v-if="show_news[2]">
+                                「お知らせ」『第一回サクラノ詩人気投票』が無事終了しました！
+                                <br>
+                                たくさんのご投票、誠にありがとうございました！
+                            </div>
+                        </transition>
+                    </li>
+                    <li>
+                        <div @click="clickNews($event)" id="1" class="news-banner">
+                            <p class="date">2015／11／27</p>
+                            <p class="news-title">『サクラノ詩』「第一回サクラノ詩人気投票」を開催しました！</p>
+                        </div>
+                        <transition name="news">
+                            <div class="news-text" v-if="show_news[1]">
+                                「お知らせ」『第一回サクラノ詩人気投票』を開始しました！
+                                <br>
+                                メインヒロインを始め、多くのサクラノ詩登場キャラが皆様の投票をお待ちしております！
+                            </div>
+                        </transition>
+                    </li>
+                    <li>
+                        <div @click="clickNews($event)" id="0" class="news-banner">
+                            <p class="date">2015／11／27</p>
+                            <p class="news-title">『サクラノ詩』「アンケート葉書で当たるプレゼントキャンペーン」に画像を追加しました！</p>
+                        </div>
+                        <transition name="news">
+                            <div class="news-text" v-if="show_news[0]">
+                                「お知らせ」『アンケート葉書で当たるプレゼントキャンペーンページ』にて、
+                                <br>
+                                『狗神煌サイン入り時計』の画像を追加しました！
+                            </div>
+                        </transition>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer" align="center">
+            <a href="http://www.makura-soft.com/index2.html">
+                <div>
+                    <img style="width:10%" src="https://www.makura-soft.com/sakuranouta/topimg/makura_banner.png">
+                </div>
+                (C) MAKURA All Rights Reserved.
+            </a>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

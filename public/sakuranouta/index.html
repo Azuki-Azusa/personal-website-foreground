@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html style="margin: 0;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>サクラノ詩</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="app">
+        <header id="header">
+            <div>
+                <nav>
+                    <ul class="header-ul">
+                        <li id="logo-ul"><a><img onclick="$('html , body').animate({scrollTop: $('#app').offset().top - 50 + 'px'}, 1000);" class="logo-img" src="resource/topimg/title.png"></a></li>
+                        <li><a><img onclick="$('html , body').animate({scrollTop: $('#infomation').offset().top - 50 + 'px'}, 1000);" class="nav-img" src="resource/topimg/bt01.png"></a></li>
+                        <li><a><img onclick="$('html , body').animate({scrollTop: $('#world').offset().top - 50 + 'px'}, 1000);" class="nav-img" src="resource/topimg/bt02.png"></a></li>
+                        <li><a><img onclick="$('html , body').animate({scrollTop: $('#story').offset().top - 50 + 'px'}, 1000);" class="nav-img" src="resource/topimg/bt03.png"></a></li>
+                        <li><a><img onclick="$('html , body').animate({scrollTop: $('#character').offset().top - 50 + 'px'}, 1000);" class="nav-img" src="resource/topimg/bt04.png"></a></li>
+                        <li><a><img onclick="$('html , body').animate({scrollTop: $('#gallery').offset().top - 50 + 'px'}, 1000);" class="nav-img" src="resource/topimg/bt05.png"></a></li>
+                        <li><a><img onclick="$('html , body').animate({scrollTop: $('#news').offset().top - 50 + 'px'}, 1000);" class="nav-img" src="resource/topimg/bt07.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <div align="center" class="main" v-bind:style="{'padding-top': topHeight}">
+            <div id="homepage">
+                <a href="http://dlsoft.dmm.co.jp/detail/mnphs_0002/" target="dmm">
+                    <img class="topimg" alt="DMM Shop" src="resource/topimg/topimg.png">
+                </a>
+            </div>
+            <div id="infomation">
+                <div class="info-header subheader">
+                    <img src="resource/title/tit_info.png">
+                </div>
+                <div style="position:relative">
+                    <!--
+                    <div class="bg">
+                        <img src="resource/information/img/sakura_top01.png">
+                    </div>
+                    -->
+                    <div style="width: 80%;">
+                        <div class="infoText">
+                            <p>ジャンル： ノベルアドベンチャー（18禁）</p>
+                            <p>ブランド： 枕</p>
+                            <p>発売日： 2015年10月23日好評発売中</p>
+                            <p>価　格：9880円（税抜き）</p>
+                            <p>総指揮 ： すかぢ</p>
+                            <p>原　画： 狗神煌／籠目（他）</p>
+                            <p>シナリオ： すかぢ（他）</p>
+                            <p>（ｃ表記）： (c)MAKURA All rights reserved.</p>
+                        </div>
+                        <div>
+                            <div class="left">
+                                <img src="resource/information/img/h3_dousakankyo.png">
+                                <table class="table_left">
+                                    <tr>
+                                        <th>対応ＯＳ</th>
+                                        <td>WindowsVista/7/8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ＣＰＵ</th>
+                                        <td>Vista/7/8 Pentium4 2GHZ以上 <br></td>
+                                    </tr>
+                                    <tr>
+                                        <th>メモリー</th>
+                                        <td>Vista/7/8 1GB以上（1.5GB以上推奨）</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ＨＤＤ容量　</th>
+                                        <td>約7GB以上</td>
+                                    </tr>
+                                    <tr>
+                                        <th>サウンド</th>
+                                        <td>DirectSoundに対応したサウンドボード</td>
+                                    </tr>
+                                    <tr>
+                                        <th>色数</th>
+                                        <td>16bit(High Color)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>VRAM</th>
+                                        <td>32MB以上</td>
+                                    </tr>
+                                    <tr>
+                                        <th>解像度</th>
+                                        <td>1280×720</td>
+                                    </tr>
+                                    <tr>
+                                        <th>メディア</th>
+                                        <td>DVD-ROM1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>DirectX9.0c以上</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ボイス</th>
+                                        <td>主要キャラのみボイスあり</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="right">
+                                <img src="resource/information/img/h3_suishodousa.png">
+                                <table class="table_right">
+                                    <tr>
+                                        <th>ＣＰＵ</th>
+                                        <td>Vista/7/8 Pentium4 4Ghz以上</td>
+                                    </tr>
+                                    <tr>
+                                        <th>メモリー</th>
+                                        <td>Vista/7/8 1.5GB以上</td>
+                                    </tr>
+                                    <tr>
+                                        <th>色数</th>
+                                        <td>32bit(True Color)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="world">
+                <div class="world-header subheader">
+                    <img src="resource/title/tit_world.png">
+
+                </div>
+                <div class="gallery-bg" v-if="show_la1">
+                    <div @click="show_la1 = false"></div>
+                    <img style="padding-top: 10%;" @click="nextImgWo" :src="la_src">
+                    <p>{{ world_names[la_index] }}</p>
+                </div>
+                <div>
+                    <img class="world-bg" src="resource/world/img/world.png">
+                    <div @mouseover="mouseOver2($event)" @mouseleave="mouseLeave2($event)" class="world-flag" @click="woLarge($event)">
+                        <img id="wo_0" style="top: 185px; left: 216px;" src="resource/world/img/marker.png">
+                        <img id="wo_1" style="top: 240px; left: 270px;" src="resource/world/img/marker.png">
+                        <img id="wo_2" style="top: 235px; left: 138px;" src="resource/world/img/marker.png">
+                        <img id="wo_3" style="top: 259px; left: 485px;" src="resource/world/img/marker.png">
+                        <img id="wo_4" style="top: 291px; left: 363px;" src="resource/world/img/marker.png">
+                        <img id="wo_5" style="top: 295px; left: 299px;" src="resource/world/img/marker.png">
+                        <img id="wo_6" style="top: 535px; left: 380px;" src="resource/world/img/marker.png">
+                        <img id="wo_7" style="top: 146px; left: 990px;" src="resource/world/img/marker.png">
+                        <img id="wo_8" style="top: 221px; left: 1093px;" src="resource/world/img/marker.png">
+                        <img id="wo_9" style="top: 271px; left: 1130px;" src="resource/world/img/marker.png">
+                        <img id="wo_10" style="top: 285px; left: 1037px;" src="resource/world/img/marker.png">
+                    </div>
+                    <div class="world-flag">
+                        <img id="world_sm" src="resource/world/img/hukidasi_.png">
+                        <img id="world_sm_img" :src="sm_src">
+                        <p id="world_sm_p">{{ world_names[la_index] }}</p>
+                    </div>
+                </div>
+            </div>
+            <div id="story">
+                <div class="story-header subheader">
+                    <img src="resource/title/tit_story.png">
+                </div>
+                <div style="position:relative">
+                    <!--
+                    <div class="bg">
+                        <img src="resource/gallery/img/image01.jpg">
+                    </div>
+                    -->
+                    <div class="story-text">
+                        <div>
+                            <img style="margin-left: -5%;" src="resource/story/img/h2_kouhuku.png">
+                        </div>
+                        <div>
+                            <img src="resource/story/img/img_story.png">
+                        </div>
+                        <div>
+                            <img src="resource/story/img/img_story2.png">
+                        </div>
+                        <div>
+                            <img src="resource/story/img/h2_10nengosi.png">
+                        </div>
+                        <div>
+                            凍結され続けていた、サクラノ詩プロジェクトがついに再始動。
+                            <br>
+                            「言葉と旋律」「幸福に生きよ」をテーマに書き上げられた『素晴らしき日々～不連続存在～』のすかぢが、
+                            <br>
+                            そのテーマを踏襲しつつその先の物語である『サクラノ詩』を描ききる。
+                            <br>
+                            原画家には狗神煌、籠目を起用。10年越しの物語が実力派スタッフによって結実する。
+                            <br>
+                            素晴らしき日々の先の話、梯子の上にある風景は、それは反哲学的物語。ごく自然な日常の物語。"
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="character">
+                <div class="character-header subheader">
+                    <img src="resource/title/tit_chara.png">
+                </div>
+                <div>
+                    <div>
+                        <div class="main-cha">
+                            <img id="rin_icon" @click="click_icon($event)" src="resource/character/img/name_rin.gif">
+                            <img id="sizuku_icon" @click="click_icon($event)" src="resource/character/img/name_sizuku.gif">
+                            <img id="ai_icon" @click="click_icon($event)" src="resource/character/img/name_ai.gif">
+                            <img id="makoto_icon" @click="click_icon($event)" src="resource/character/img/name_makoto.gif">
+                            <img id="rina_icon" @click="click_icon($event)" src="resource/character/img/name_rina.gif">
+                            <img id="other_icon" @click="click_icon($event)" src="resource/character/img/name_other.gif">
+                        </div>
+                        <div style="position: relative">
+                            <div class="white-bg"></div>
+                            <div class="intro">
+                                <transition name="chara">
+                                    <div id="rin" key="rin" v-if="cha_flag=='rin_icon'">
+                                        <div class="chaimg" @click="changeE">
+                                            <img style="height: 350px; right: 30%;" src="resource/character/img/rin/rin_name.png">
+                                            <transition name="chara2">
+                                                <img v-if="cha_show==1" key="e1" src="resource/character/img/rin/rin01.png">
+                                                <img v-if="cha_show==2" key="e2" src="resource/character/img/rin/rin02.png">
+                                                <img v-if="cha_show==3" key="e3" src="resource/character/img/rin/rin03.png">
+                                                <img v-if="cha_show==4" key="e4" src="resource/character/img/rin/rin04.png">
+                                                <img v-if="cha_show==5" key="e5" src="resource/character/img/rin/rin05.png">
+                                            </transition>
+                                        </div>
+                                        <div class="chainfo">
+                                            <h1><ruby><rb>御桜</rb><rt>みさくら</rt></ruby> <ruby><rb>稟</rb><rt>りん</rt></ruby></h1>
+                                            <h2>ＣＶ.萌花ちょこ</h2>
+                                            <h4>誕生日:5月14日</h4>
+                                            <h4>B88/W/59/H90 155cm</h4>
+                                            草薙直哉の幼なじみ、数年ぶりに弓張の地を踏み、直哉との再会を果たす。非常に頭の回転が速く、機転が利く。成績優秀者でもあり、ほぼ完璧であるが、ブランコが出来ないなどどうでも良い能力が欠落している。弓張学園美術部に所属する。
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <img id="voice_1" @click="click_voice($event)" src="resource/character/img/voice/sample_voice1.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_2" @click="click_voice($event)" src="resource/character/img/voice/sample_voice2.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_3" @click="click_voice($event)" src="resource/character/img/voice/sample_voice3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sizuku" key="shizuku" v-if="cha_flag=='sizuku_icon'">
+                                        <div class="chaimg" @click="changeE">
+                                            <img style="height: 350px; right: 30%;" src="resource/character/img/sizuku/sizuku_name.png">
+                                            <transition name="chara2">
+                                                <img v-if="cha_show==1" key="e1" src="resource/character/img/sizuku/sizuku01.png">
+                                                <img v-if="cha_show==2" key="e2" src="resource/character/img/sizuku/sizuku02.png">
+                                                <img v-if="cha_show==3" key="e3" src="resource/character/img/sizuku/sizuku03.png">
+                                                <img v-if="cha_show==4" key="e4" src="resource/character/img/sizuku/sizuku04.png">
+                                                <img v-if="cha_show==5" key="e5" src="resource/character/img/sizuku/sizuku05.png">
+                                            </transition>
+                                        </div>
+                                        <div class="chainfo">
+                                            <h1><ruby><rb>夏目</rb><rt>なつめ</rt></ruby> <ruby><rb>雫</rb><rt>しずく</rt></ruby></h1>
+                                            <h2>ＣＶ.早瀬ゃょぃ</h2>
+                                            <h4>誕生日:12月12日</h4>
+                                            <h4>B80/W58/H79 151cm</h4>
+                                            夏目家の次女。性格は無口・無愛想で、人を寄せ付けない雰囲気を持つが、稟には子供のように懐いている。直哉にも一定以上懐いている。草薙葛佳の名前で女優として活躍している。
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <img id="voice_1" @click="click_voice($event)" src="resource/character/img/voice/sample_voice1.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_2" @click="click_voice($event)" src="resource/character/img/voice/sample_voice2.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_3" @click="click_voice($event)" src="resource/character/img/voice/sample_voice3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ai" key="ai" v-if="cha_flag=='ai_icon'">
+                                        <div class="chaimg" @click="changeE">
+                                            <img style="height: 350px; right: 30%;" src="resource/character/img/ai/ai_name.png">
+                                            <transition name="chara2">
+                                                <img v-if="cha_show==1" key="e1" src="resource/character/img/ai/ai01.png">
+                                                <img v-if="cha_show==2" key="e2" src="resource/character/img/ai/ai02.png">
+                                                <img v-if="cha_show==3" key="e3" src="resource/character/img/ai/ai03.png">
+                                                <img v-if="cha_show==4" key="e4" src="resource/character/img/ai/ai04.png">
+                                                <img v-if="cha_show==5" key="e5" src="resource/character/img/ai/ai05.png">
+                                            </transition>
+                                        </div>
+                                        <div class="chainfo">
+                                            <h1><ruby><rb>夏目</rb><rt>なつめ</rt></ruby> <ruby><rb>藍</rb><rt>あい</rt></ruby></h1>
+                                            <h2>ＣＶ.澤田なつ</h2>
+                                            <h4>誕生日:8月25日</h4>
+                                            <h4>B77/W56/H76 145cm</h4>
+                                            夏目家の現在の長女。教師&美術部顧問。主人公らが通う学園に、現国教師として赴任している。彼女が両親不在である夏目家を守る事に固執して見えるのは、物語が進むにつれて明らかになっていく。
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <img id="voice_1" @click="click_voice($event)" src="resource/character/img/voice/sample_voice1.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_2" @click="click_voice($event)" src="resource/character/img/voice/sample_voice2.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_3" @click="click_voice($event)" src="resource/character/img/voice/sample_voice3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="makoto" key="makoto" v-if="cha_flag=='makoto_icon'">
+                                        <div class="chaimg" @click="changeE">
+                                            <img style="height: 350px; right: 30%;" src="resource/character/img/makoto/makoto_name.png">
+                                            <transition name="chara2">
+                                                <img style="height: 750px;" v-if="cha_show==1" key="e1" src="resource/character/img/makoto/makoto01.png">
+                                                <img style="height: 750px;" v-if="cha_show==2" key="e2" src="resource/character/img/makoto/makoto02.png">
+                                                <img style="height: 750px;" v-if="cha_show==3" key="e3" src="resource/character/img/makoto/makoto03.png">
+                                                <img style="height: 750px;" v-if="cha_show==4" key="e4" src="resource/character/img/makoto/makoto04.png">
+                                                <img style="height: 750px;" v-if="cha_show==5" key="e5" src="resource/character/img/makoto/makoto05.png">
+                                            </transition>
+                                        </div>
+                                        <div class="chainfo">
+                                            <h1><ruby><rb>鳥谷</rb><rt>とりたに</rt></ruby> <ruby><rb>真琴</rb><rt>まこと</rt></ruby></h1>
+                                            <h2>ＣＶ.五行なずな</h2>
+                                            <h4>誕生日:2月14日</h4>
+                                            <h4>B90/W58/H89 158cm</h4>
+                                            直哉の同級生。現美術部部長であり、その部の存続のために尽力を尽くしている。傍若無人を演じているが、非常に繊細で優しい。彼女が部を守るために虚勢をはる姿は、子を守るライオンの様である。
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <img id="voice_1" @click="click_voice($event)" src="resource/character/img/voice/sample_voice1.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_2" @click="click_voice($event)" src="resource/character/img/voice/sample_voice2.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_3" @click="click_voice($event)" src="resource/character/img/voice/sample_voice3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="rina" key="rina" v-if="cha_flag=='rina_icon'">
+                                        <div class="chaimg" @click="changeE">
+                                            <img style="height: 350px; right: 0%;" src="resource/character/img/rina/rina_name.png">
+                                            <transition name="chara2">
+                                                <img v-if="cha_show==1" key="e1" src="resource/character/img/rina/rina01.png">
+                                                <img v-if="cha_show==2" key="e2" src="resource/character/img/rina/rina02.png">
+                                                <img v-if="cha_show==3" key="e3" src="resource/character/img/rina/rina03.png">
+                                                <img v-if="cha_show==4" key="e4" src="resource/character/img/rina/rina04.png">
+                                                <img v-if="cha_show==5" key="e5" src="resource/character/img/rina/rina05.png">
+                                            </transition>
+                                        </div>
+                                        <div class="chainfo">
+                                            <h1><ruby><rb>氷川</rb><rt>ひかわ</rt></ruby> <ruby><rb>里奈</rb><rt>りな</rt></ruby></h1>
+                                            <h2>ＣＶ.藤森ゆき奈</h2>
+                                            <h4>誕生日:9月4日</h4>
+                                            <h4>B92/W58/H86 153cm</h4>
+                                            直哉と幼なじみの少女。自称「妹後輩」。なぜか同級生である川内野優美に並々ならぬ愛情を注がれている。彼女自身は百合でもなければレズでもない。ただ少し残念なだけの弓張学園新入生。美術部所属。
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <img id="voice_1" @click="click_voice($event)" src="resource/character/img/voice/sample_voice1.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_2" @click="click_voice($event)" src="resource/character/img/voice/sample_voice2.png">
+                                            </div>
+                                            <div>
+                                                <img id="voice_3" @click="click_voice($event)" src="resource/character/img/voice/sample_voice3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="other" key="other" v-if="cha_flag=='other_icon'">
+                                        <div class="chaimg" style="width:100%">
+                                            <transition-group name="chara2">
+                                                <img id="kei" @mouseover="mouseOver($event)" style="right: 50%;  height: 650px;" key="kei1" src="resource/character/img/img_kei_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='kei'" key="kei2">
+                                                    <img style="right: 50%; height: 650px;" src="resource/character/img/img_kei_on.png">
+                                                    <div style="right: 50%;">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                                <img id="yumi" @mouseover="mouseOver($event)" style="left: 50%; top: 50px; height: 600px;" key="yumi1" src="resource/character/img/img_yumi_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='yumi'" key="yumi2">
+                                                    <img style="left: 50%; top: 50px; height: 600px;" src="resource/character/img/img_yumi_on.png">
+                                                    <div style="left: 50%; top: 50px">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                                <img id="naoya" style="right: 50%; top: 700px" @mouseover="mouseOver($event)" key="naoya1" src="resource/character/img/img_naoya_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='naoya'" key="naoya2">
+                                                    <img style="right: 50%; top: 700px" src="resource/character/img/img_naoya_on.png">
+                                                    <div style="right: 50%; top: 700px">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                                <img id="akasih" style="left: 50%; top: 700px" key="akasih1" @mouseover="mouseOver($event)" src="resource/character/img/img_akasih_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='akasih'"  key="akasih2" >
+                                                    <img style="left: 50%; top: 700px" src="resource/character/img/img_akasih_on.png">
+                                                    <div style="left: 50%; top: 700px">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                                <img id="sui" style="right: 50%; top: 1500px; height: 500px;" @mouseover="mouseOver($event)" key="sui1" src="resource/character/img/img_sui_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='sui'" key="sui2">
+                                                    <img style="right: 50%; top: 1500px; height: 500px;" src="resource/character/img/img_sui_on.png">
+                                                    <div style="right: 50%; top: 1500px">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                                <img id="toomas" style="left: 50%; top: 1400px" @mouseover="mouseOver($event)" key="toomas1" src="resource/character/img/toomas_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='toomas'" key="toomas2">
+                                                    <img style="left: 50%; top: 1400px" src="resource/character/img/toomas_on.png">
+                                                    <div style="left: 50%; top: 1400px">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                                <img id="kosachi" style="right: 50%; top: 2150px; height: 600px;" @mouseover="mouseOver($event)" key="kosachi1" src="resource/character/img/img_kosachi_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='kosachi'" key="kosachi2">
+                                                    <img style="right: 50%; top: 2150px; height: 600px;"  src="resource/character/img/img_kosachi_on.png">
+                                                    <div style="right: 50%; top: 2150px">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                                <img id="komaki" style="left: 50%; top: 2150px; height: 600px;" @mouseover="mouseOver($event)" key="komaki1" src="resource/character/img/img_komaki_off.png">
+                                                <div style="width: 100%;" @mouseleave="mouseLeave($event)" v-if="cha_show_on=='komaki'" key="komaki2" >
+                                                    <img style="left: 50%; top: 2150px; height: 600px;" src="resource/character/img/img_komaki_on.png">
+                                                    <div style="left: 50%; top: 2150px">
+                                                        <img src="resource/character/img/voice/sample_voice.png">
+                                                        <img id="voice_1" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_1.png">
+                                                        <img id="voice_2" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_2.png">
+                                                        <img id="voice_3" class="voice-img" @click="click_voice($event)" src="resource/character/img/voice/buttion_play_sample_voice_3.png">
+                                                    </div>
+                                                </div>
+                                            </transition-group>
+                                        </div>
+                                    </div>
+                                </transition>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery">
+                <div class="gallery-header subheader">
+                    <img src="resource/title/tit_gallery.png">
+                </div>
+                <div class="gallery-bg" v-if="show_la">
+                    <div @click="show_la = false"></div>
+                    <img @click="nextImg" :src="la_src">
+                </div>
+                <div>
+                    <ul class="gallery-ul">
+                        <li v-for="(img, index) in gallery_imgs">
+                            <img @click="imgLarge(index)" :src="img.sm">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="news">
+                <div class="news-header subheader">
+                    <img src="resource/title/tit_whatsnew.png">
+                </div>
+                <div>
+                    <ul class="news-ul">
+                        <li>
+                            <div @click="clickNewsI($event)" id="5" class="news-banner">
+                                <p class="date">2017／4／19</p>
+                                <p class="news-title">サクラノ詩が『萌えゲーアワード2015』にて"大賞"を頂きました！</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div @click="clickNewsI($event)" id="4" class="news-banner">
+                                <p class="date">2016／5／23</p>
+                                <p class="news-title">『サクラノ詩 -櫻の森の上を舞う- 公式ビジュアルアーカイヴ』発売決定！！</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div @click="clickNewsI($event)" id="3" class="news-banner">
+                                <p class="date">2016／5／19</p>
+                                <p class="news-title">『サクラノ詩』DMM.com様にてダウンロード販売を開始！！</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button onclick="window.open('news.html')">View More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" align="center">
+            <a href="http://www.makura-soft.com/index2.html">
+                <div>
+                    <img style="width:10%" src="https://www.makura-soft.com/sakuranouta/topimg/makura_banner.png">
+                </div>
+                (C) MAKURA All Rights Reserved.
+            </a>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
