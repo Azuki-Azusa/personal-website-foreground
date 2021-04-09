@@ -19,6 +19,7 @@ header {
     filter:alpha(Opacity=80);
     -moz-opacity:0.8;
     opacity: 0.8;
+    width: 100%;
 }
 
 .header-ul > li {
